@@ -1,0 +1,36 @@
+body { /* To align the boxes with a flexbox layout */
+    min-height: 800px;               
+    border: 8px, solid black;
+    display: flex; 
+    gap: 20px;
+
+    /* You can resize flex-box responsively
+       NEXT GOAL: A layout where the boxes grows and shrink responsibly*/
+    
+    /* Since we don't have flex-box applied, the boxes will be risized automatically
+       if the viewport gets small which can be specify using flex-shrink.
+       This is something that is applied on the flex-items not on flex-container.*/
+}   
+
+.box{ /* For basic layout */
+    flex-grow: 0;
+    /* This is a counterpart of  flex-shrink. This enable elements to grow meaning to stretch 
+       along the main axis
+                1. 0 [zero] - default value where elements do not grow for default
+                2. 1 [one]  - all the flex items try to fill out the empty space inside
+                              their parent elements, which means it will be bigger 
+       NOTE: Can also use to a specific box using "id" and you can assign even higher numbers than one
+             which only make sense when they are compared with each other */
+
+    /* Even more powerful when you combine it with minimum and maximum sizes.
+                1. mid-width
+                2. max-width
+       where it define when the flex-shrink and flex-grow should stop */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+    background-color: #0071FF;
+    font-size: 40pt;
+}
