@@ -1,0 +1,27 @@
+body { /* To align the boxes with a flexbox layout */
+    min-height: 800px;               
+    border: 8px, solid black;
+    display: flex; 
+    gap: 20px; 
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+    /* It control the alignment of all the lines together
+                                1. space-around - default, big gaps
+                                2. space-between
+                                3. space-evenly
+                                4. flex-start
+                                5. flex-end
+                                6. center
+    NOTE: The difference between align-items and align-content is align-items will
+          control the alignment along the cross-axis of every flexbox line individually
+          while align-content will control the alignment of all line together.*/
+}   
+
+.box{ /* For basic layout */
+    height: 200px;
+    width: 200px;
+    background-color: #0071FF;
+    font-size: 40pt;
+}
