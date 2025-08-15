@@ -1,0 +1,23 @@
+body { /* To align the boxes with a flexbox layout */
+    min-height: 800px;               
+    border: 8px, solid black;
+    display: flex; 
+    gap: 20px; 
+    /* This will create  a gap between our items which is very simple
+    and you don't need to use margins inside a flex-box layout*/
+    flex-wrap: wrap;
+    /* This can make your flex-box layout responsive using one line of code
+                    1. wrap - responsive layout that will align your items on 
+                    the next line if we don't have enough space.
+                    2. nowrap - the elements will only shrink together unlike with wrap*/
+    justify-content: center;
+    align-items: center;
+
+}   
+
+.box{ /* For basic layout */
+    height: 200px;
+    width: 200px;
+    background-color: #0071FF;
+    font-size: 40pt;
+}
