@@ -1,0 +1,28 @@
+body { /* To align the boxes with a flexbox layout */
+    min-height: 800px;               
+    border: 8px, solid black;
+    display: flex; 
+    gap: 20px;
+
+    /* You can resize flex-box responsively
+       NEXT GOAL: A layout where the boxes grows and shrink responsibly*/
+    
+    /* Since we don't have flex-box applied, the boxes will be risized automatically
+       if the viewport gets small which can be specify using flex-shrink.
+       This is something that is applied on the flex-items not on flex-container.*/
+}   
+
+.box{ /* For basic layout */
+    flex-shrink: 0;
+    /* 0 [zero] - This will prevent the shrinking of the boxes and will overflow the container
+                  which also a case for every non-flexbox layout
+       1 [one]  - To make the boxes shrink automatically / default value 
+    NOTE: can also be use in each item by using an "id" */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+    background-color: #0071FF;
+    font-size: 40pt;
+}
