@@ -1,0 +1,30 @@
+body { /* To align the boxes with a flexbox layout */
+    border: 8px, solid black;
+    display: flex; /* Very important  css property: Can be INLINE or BLOCK */
+    justify-content: space-between; 
+    /* Needed to position element along the MAIN AXIS 
+                        1. flex-start - default value / left side
+                        2. flex-end - at the end / right side
+                        3. center - center of main axis
+                        4. space-between - distribute from left to right
+                        5. space-around - works similarly but is does not touch the edge
+                        6. space-evenly - for better spacing, same sizes*/
+    
+     min-height: 800px;                   
+    /* We considered CROSS-AXIS to align boxes vertically 
+        to do this, ncrease the the size of the flex-box layout*/
+
+   align-items: center; 
+     /* Use the align item property to control the alignment along
+        the cross-axis. This can have a same value like JUSTIFY-CONTENT
+                        1. flex-start - top
+                        2. flex-end - bottom
+                        3. center*/
+}   
+
+.box{ /* For basic layout */
+    height: 200px;
+    width: 200px;
+    background-color: #0071FF;
+    font-size: 40pt;
+}
