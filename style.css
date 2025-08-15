@@ -1,0 +1,21 @@
+body { /* To align the boxes with a flexbox layout */
+     min-height: 800px;               
+    border: 8px, solid black;
+    display: flex; 
+    flex-direction: row; 
+    /*It controls the direction of the main axis, which influence other flexbox properties
+                        1. row - default value / left to right
+                        2. row-reverse - for right to left
+                        3. column - from top to bottom
+    NOTE: If you want to center the boxes horizontally with flex-direction, use align-items*/
+    justify-content: flex-start;
+    align-items: center;
+
+}   
+
+.box{ /* For basic layout */
+    height: 200px;
+    width: 200px;
+    background-color: #0071FF;
+    font-size: 40pt;
+}
