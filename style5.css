@@ -1,0 +1,27 @@
+body { /* To align the boxes with a flexbox layout */
+    min-height: 800px;               
+    border: 8px, solid black;
+    display: flex; 
+    column-gap: 10px;
+    row-gap: 20px;
+    /* You can split the gap property into two fifferent properties:display:
+                1. row-gap
+                2. column-gap
+       you can use this to apply different values for the horizontal and vertical gaps*/
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+}   
+
+.box{ /* For basic layout */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* If we want to center the numbers inside the boxes, use the style2.css
+       but now inside the class of box */
+    height: 200px;
+    width: 200px;
+    background-color: #0071FF;
+    font-size: 40pt;
+}
